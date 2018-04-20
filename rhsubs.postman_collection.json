@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "c9c62ec6-f751-4824-ae37-6c44e57253db",
+		"name": "rhsubs",
+		"description": "rhsubs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "rhsubs",
+			"description": "Folder for rhsubs",
+			"item": [
+				{
+					"name": "this is a get operation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http:///rhsubs",
+							"host": [
+								"http:"
+							],
+							"port": "",
+							"path": [
+								"",
+								"",
+								"rhsubs"
+							]
+						},
+						"description": "to fetch all rhsubs"
+					},
+					"response": [
+						{
+							"id": "3c14c9f1-9a11-4918-b56f-00023526ef30",
+							"name": "this is a get operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "http:///rhsubs",
+									"host": [
+										"http:"
+									],
+									"port": "",
+									"path": [
+										"",
+										"",
+										"rhsubs"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [],
+							"cookie": [],
+							"body": "{\n\t\"name\": \"subscription1\",\n\t\"category\": \"enterprise\",\n\t\"id\": 1,\n\t\"region\": \"Americas\",\n\t\"product\": \"fuse\"\n}"
+						}
+					]
+				},
+				{
+					"name": "",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "an rhsub object"
+						},
+						"url": {
+							"raw": "http:///rhsubs",
+							"host": [
+								"http:"
+							],
+							"port": "",
+							"path": [
+								"",
+								"",
+								"rhsubs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "rhsubs body"
+						},
+						"url": {
+							"raw": "http:///rhsubs",
+							"host": [
+								"http:"
+							],
+							"port": "",
+							"path": [
+								"",
+								"",
+								"rhsubs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http:///rhsubs",
+							"host": [
+								"http:"
+							],
+							"port": "",
+							"path": [
+								"",
+								"",
+								"rhsubs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
