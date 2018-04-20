@@ -1,0 +1,96 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "rhsubs",
+    "description": "rhsubs",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/rhsubs": {
+      "get": {
+        "summary": "this is a get operation",
+        "description": "to fetch all rhsubs",
+        "responses": {
+          "200": {
+            "description": "all good",
+            "schema": {
+              "$ref": "#/definitions/rhsubs"
+            }
+          }
+        }
+      },
+      "put": {
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "an rhsub object",
+            "schema": {
+              "$ref": "#/definitions/rhsubs"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "all good"
+          }
+        }
+      },
+      "post": {
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "rhsubs body",
+            "schema": {
+              "$ref": "#/definitions/rhsubs"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "all good",
+            "schema": {
+              "$ref": "#/definitions/rhsubs"
+            }
+          }
+        }
+      },
+      "delete": {
+        "responses": {
+          "200": {
+            "description": "all good",
+            "schema": {
+              "$ref": "#/definitions/rhsubs"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "rhsubs": {
+      "title": "Root Type for rhsubs",
+      "description": "The root of the rhsubs type's schema.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "region": {
+          "type": "string"
+        },
+        "product": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
